@@ -1,0 +1,88 @@
+*{
+    margin: 0;
+    padding: 0;
+    outline: none;
+}
+
+body{
+    background: white;
+}
+#comments-form, .comments{
+width: 400px;
+margin: 50px auto;
+}
+
+#comments-form input,
+#comments-form textarea{
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 15px 20px;
+    border: 1px solid coral;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+#comments-form textarea{
+    resize: none;
+    height: 100px;
+}
+
+#comments-form button{
+    border-radius: 5px;
+    border: 0;
+    background: coral;
+    padding: 10px 20px;
+    font-size: 14px;
+    color: white;
+    cursor: pointer;
+    transition: background 600ms ease;
+}
+
+#comments-form button:hover{
+    background: black;
+}
+/* если блок не пустой:not(:empty) то стили будут подтягиваться  */
+#error:not(:empty){
+    margin-bottom: 10px;
+    font-size: 17px;
+    font-weight: bold;
+    color: coral;
+}
+
+.comments h3{
+    margin-bottom: 10px;
+    color: coral;
+
+}
+.comments h3 span{
+    color:coral;
+}
+
+.comments .comment{
+    width: 400px;
+    background: white;
+    border: 1px solid coral;
+    border-radius: 5px;
+    padding: 15px 20px;
+    margin-bottom: 20px;
+}
+
+.comments .comment .delete{
+    float: right;
+    cursor: pointer;
+    color: coral;
+    font-weight: bold;
+}
+
+.comments .comment .delete:hover{
+    color:black;
+}
+
+.comments .comment .name{
+font-weight: bold;
+color:coral
+}
+.comments .comment .mess{
+margin-top: 10px;
+color: coral;
+}
